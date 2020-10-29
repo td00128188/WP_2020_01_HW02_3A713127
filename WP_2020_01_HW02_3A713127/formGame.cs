@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WP_2020_01_HW02_3A713127.Properties;
 
 namespace WP_2020_01_HW02_3A713127
 {
     public partial class formGame : Form
     {
+        List<Image> list = new List<Image>();
         public formGame()
         {
             InitializeComponent();
@@ -22,33 +24,24 @@ namespace WP_2020_01_HW02_3A713127
 
         }
 
-        private void pb1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pb2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pb3_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void pb4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pb5_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn1_Click(object sender, EventArgs e)
         {
+            int index = 11;
+            pb1.Image = list[index];
+        }
 
+        private void formGame_Load(object sender, EventArgs e)
+        {
+            list.Add(Resources._1);
+            list.Add(Resources._2);
+            list.Add(Resources._3);
+            list.Add(Resources._4);
+            list.Add(Resources._5);
+            list.Add(Resources._6);
+            list.Add(Resources._7);
+            list.Add(Resources._8);
+            list.Add(Resources._9);
+            list.Add(Resources._10);
         }
     }
 }

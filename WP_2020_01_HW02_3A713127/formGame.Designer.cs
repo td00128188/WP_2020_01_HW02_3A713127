@@ -45,9 +45,9 @@
             // btn1
             // 
             this.btn1.Font = new System.Drawing.Font("新細明體", 16F);
-            this.btn1.Location = new System.Drawing.Point(292, 378);
+            this.btn1.Location = new System.Drawing.Point(334, 382);
             this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(129, 60);
+            this.btn1.Size = new System.Drawing.Size(150, 60);
             this.btn1.TabIndex = 0;
             this.btn1.Text = "抽牌";
             this.btn1.UseVisualStyleBackColor = true;
@@ -67,52 +67,52 @@
             // 
             this.pb1.Location = new System.Drawing.Point(22, 153);
             this.pb1.Name = "pb1";
-            this.pb1.Size = new System.Drawing.Size(129, 219);
+            this.pb1.Size = new System.Drawing.Size(150, 210);
+            this.pb1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb1.TabIndex = 3;
             this.pb1.TabStop = false;
-            this.pb1.Click += new System.EventHandler(this.pb1_Click);
             // 
             // pb2
             // 
-            this.pb2.Location = new System.Drawing.Point(157, 153);
+            this.pb2.Location = new System.Drawing.Point(178, 153);
             this.pb2.Name = "pb2";
-            this.pb2.Size = new System.Drawing.Size(129, 219);
+            this.pb2.Size = new System.Drawing.Size(150, 210);
+            this.pb2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb2.TabIndex = 4;
             this.pb2.TabStop = false;
-            this.pb2.Click += new System.EventHandler(this.pb2_Click);
             // 
             // pb3
             // 
-            this.pb3.Location = new System.Drawing.Point(292, 153);
+            this.pb3.Location = new System.Drawing.Point(334, 153);
             this.pb3.Name = "pb3";
-            this.pb3.Size = new System.Drawing.Size(129, 219);
+            this.pb3.Size = new System.Drawing.Size(150, 210);
+            this.pb3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb3.TabIndex = 5;
             this.pb3.TabStop = false;
-            this.pb3.Click += new System.EventHandler(this.pb3_Click);
             // 
             // pb4
             // 
-            this.pb4.Location = new System.Drawing.Point(427, 153);
+            this.pb4.Location = new System.Drawing.Point(490, 153);
             this.pb4.Name = "pb4";
-            this.pb4.Size = new System.Drawing.Size(129, 219);
+            this.pb4.Size = new System.Drawing.Size(150, 210);
+            this.pb4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb4.TabIndex = 6;
             this.pb4.TabStop = false;
-            this.pb4.Click += new System.EventHandler(this.pb4_Click);
             // 
             // pb5
             // 
-            this.pb5.Location = new System.Drawing.Point(562, 153);
+            this.pb5.Location = new System.Drawing.Point(646, 153);
             this.pb5.Name = "pb5";
-            this.pb5.Size = new System.Drawing.Size(129, 219);
+            this.pb5.Size = new System.Drawing.Size(150, 210);
+            this.pb5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb5.TabIndex = 7;
             this.pb5.TabStop = false;
-            this.pb5.Click += new System.EventHandler(this.pb5_Click);
             // 
             // formGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(855, 499);
             this.Controls.Add(this.pb5);
             this.Controls.Add(this.pb4);
             this.Controls.Add(this.pb3);
@@ -122,6 +122,7 @@
             this.Controls.Add(this.btn1);
             this.Name = "formGame";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.formGame_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb3)).EndInit();
