@@ -45,7 +45,7 @@
             // btn1
             // 
             this.btn1.Font = new System.Drawing.Font("新細明體", 16F);
-            this.btn1.Location = new System.Drawing.Point(292, 342);
+            this.btn1.Location = new System.Drawing.Point(292, 378);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(129, 60);
             this.btn1.TabIndex = 0;
@@ -56,7 +56,7 @@
             // lab1
             // 
             this.lab1.Font = new System.Drawing.Font("新細明體", 20F);
-            this.lab1.Location = new System.Drawing.Point(16, 9);
+            this.lab1.Location = new System.Drawing.Point(16, 19);
             this.lab1.Name = "lab1";
             this.lab1.Size = new System.Drawing.Size(139, 46);
             this.lab1.TabIndex = 2;
@@ -65,7 +65,7 @@
             // 
             // pb1
             // 
-            this.pb1.Location = new System.Drawing.Point(22, 117);
+            this.pb1.Location = new System.Drawing.Point(22, 153);
             this.pb1.Name = "pb1";
             this.pb1.Size = new System.Drawing.Size(129, 219);
             this.pb1.TabIndex = 3;
@@ -74,7 +74,7 @@
             // 
             // pb2
             // 
-            this.pb2.Location = new System.Drawing.Point(157, 117);
+            this.pb2.Location = new System.Drawing.Point(157, 153);
             this.pb2.Name = "pb2";
             this.pb2.Size = new System.Drawing.Size(129, 219);
             this.pb2.TabIndex = 4;
@@ -83,7 +83,7 @@
             // 
             // pb3
             // 
-            this.pb3.Location = new System.Drawing.Point(292, 117);
+            this.pb3.Location = new System.Drawing.Point(292, 153);
             this.pb3.Name = "pb3";
             this.pb3.Size = new System.Drawing.Size(129, 219);
             this.pb3.TabIndex = 5;
@@ -92,7 +92,7 @@
             // 
             // pb4
             // 
-            this.pb4.Location = new System.Drawing.Point(427, 117);
+            this.pb4.Location = new System.Drawing.Point(427, 153);
             this.pb4.Name = "pb4";
             this.pb4.Size = new System.Drawing.Size(129, 219);
             this.pb4.TabIndex = 6;
@@ -101,7 +101,7 @@
             // 
             // pb5
             // 
-            this.pb5.Location = new System.Drawing.Point(562, 117);
+            this.pb5.Location = new System.Drawing.Point(562, 153);
             this.pb5.Name = "pb5";
             this.pb5.Size = new System.Drawing.Size(129, 219);
             this.pb5.TabIndex = 7;
