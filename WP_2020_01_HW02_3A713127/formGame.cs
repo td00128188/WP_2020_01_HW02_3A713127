@@ -14,6 +14,7 @@ namespace WP_2020_01_HW02_3A713127
     public partial class formGame : Form
     {
         List<Image> list = new List<Image>();
+        
         public formGame()
         {
             InitializeComponent();
@@ -26,8 +27,17 @@ namespace WP_2020_01_HW02_3A713127
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            int index = 11;
+            Random deck =new Random();
+            int index = deck.Next(0, 10);
             pb1.Image = list[index];
+            pb2.Image = list[index];
+            pb3.Image = list[index];
+            pb4.Image = list[index];
+            pb5.Image = list[index];
+            while (pb1.Image == pb2.Image)
+            {
+                pb2.Image = list[index];
+            }
         }
 
         private void formGame_Load(object sender, EventArgs e)
