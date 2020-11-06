@@ -23,24 +23,7 @@ namespace WP_2020_01_HW02_3A713127
         private void btn1_Click(object sender, EventArgs e)
         {
             Random deck = new Random();
-            int index = deck.Next(0,52);
-            pb1.Image = list[index];
-            if (index <= 13)
-            {
-                rtb1.Text = "黑桃\r\n";
-            }
-            else if (index <= 26&&13<index)
-            {
-                rtb1.Text = "愛心\r\n";
-            }
-            else if (26 < index && index <= 39)
-            {
-                rtb1.Text = "方塊\r\n";
-            }
-            else
-            {
-                rtb1.Text = "梅花\r\n";
-            }
+            pb1.Image = list[deck.Next(0,52)];
         }
 
         private void formGame_Load(object sender, EventArgs e)
