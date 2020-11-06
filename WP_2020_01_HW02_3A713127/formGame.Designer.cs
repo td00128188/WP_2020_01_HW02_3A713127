@@ -30,8 +30,8 @@
         {
             this.btn1 = new System.Windows.Forms.Button();
             this.lab1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pb1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pb1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn1
@@ -57,28 +57,27 @@
             this.lab1.Text = "抽牌順序";
             this.lab1.Click += new System.EventHandler(this.lab1_Click);
             // 
-            // pictureBox1
+            // pb1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(513, 87);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(105, 150);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.pb1.Location = new System.Drawing.Point(481, 163);
+            this.pb1.Name = "pb1";
+            this.pb1.Size = new System.Drawing.Size(105, 150);
+            this.pb1.TabIndex = 3;
+            this.pb1.TabStop = false;
             // 
             // formGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(641, 399);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pb1);
             this.Controls.Add(this.lab1);
             this.Controls.Add(this.btn1);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "formGame";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.formGame_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -87,7 +86,7 @@
 
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Label lab1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pb1;
     }
 }
 

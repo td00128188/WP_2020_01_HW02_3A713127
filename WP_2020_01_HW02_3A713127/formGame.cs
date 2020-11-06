@@ -28,7 +28,7 @@ namespace WP_2020_01_HW02_3A713127
         private void btn1_Click(object sender, EventArgs e)
         {
             Random deck = new Random;
-            int index = 
+            int index;
         }
 
         private void formGame_Load(object sender, EventArgs e)
