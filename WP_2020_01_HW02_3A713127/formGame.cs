@@ -20,20 +20,33 @@ namespace WP_2020_01_HW02_3A713127
             InitializeComponent();
         }
 
-        private void lab1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn1_Click(object sender, EventArgs e)
         {
             Random deck = new Random();
             int index = deck.Next(0,52);
             pb1.Image = list[index];
+            if (index <= 13)
+            {
+                rtb1.Text = "黑桃\r\n";
+            }
+            else if (index <= 26&&13<index)
+            {
+                rtb1.Text = "愛心\r\n";
+            }
+            else if (26 < index && index <= 39)
+            {
+                rtb1.Text = "方塊\r\n";
+            }
+            else
+            {
+                rtb1.Text = "梅花\r\n";
+            }
         }
 
         private void formGame_Load(object sender, EventArgs e)
         {
+            list.Add(Resources._1);
+            list.Add(Resources._2);
             list.Add(Resources._3);
             list.Add(Resources._4);
             list.Add(Resources._5);
@@ -84,10 +97,7 @@ namespace WP_2020_01_HW02_3A713127
             list.Add(Resources._50);
             list.Add(Resources._51);
             list.Add(Resources._52);
-            list.Add(Resources._53);
-            list.Add(Resources._54);
         }
-
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
 

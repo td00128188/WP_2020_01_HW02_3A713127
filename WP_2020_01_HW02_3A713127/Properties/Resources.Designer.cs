@@ -63,6 +63,16 @@ namespace WP_2020_01_HW02_3A713127.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap _1 {
+            get {
+                object obj = ResourceManager.GetObject("1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap _10 {
             get {
                 object obj = ResourceManager.GetObject("10", resourceCulture);
@@ -156,6 +166,16 @@ namespace WP_2020_01_HW02_3A713127.Properties {
         internal static System.Drawing.Bitmap _19 {
             get {
                 object obj = ResourceManager.GetObject("19", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _2 {
+            get {
+                object obj = ResourceManager.GetObject("2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -516,26 +536,6 @@ namespace WP_2020_01_HW02_3A713127.Properties {
         internal static System.Drawing.Bitmap _52 {
             get {
                 object obj = ResourceManager.GetObject("52", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
-        /// </summary>
-        internal static System.Drawing.Bitmap _53 {
-            get {
-                object obj = ResourceManager.GetObject("53", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
-        /// </summary>
-        internal static System.Drawing.Bitmap _54 {
-            get {
-                object obj = ResourceManager.GetObject("54", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
