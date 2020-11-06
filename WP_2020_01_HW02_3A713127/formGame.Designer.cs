@@ -31,6 +31,7 @@
             this.btn1 = new System.Windows.Forms.Button();
             this.lab1 = new System.Windows.Forms.Label();
             this.pb1 = new System.Windows.Forms.PictureBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,17 +60,28 @@
             // 
             // pb1
             // 
-            this.pb1.Location = new System.Drawing.Point(481, 163);
+            this.pb1.Location = new System.Drawing.Point(478, 124);
             this.pb1.Name = "pb1";
             this.pb1.Size = new System.Drawing.Size(105, 150);
+            this.pb1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb1.TabIndex = 3;
             this.pb1.TabStop = false;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(17, 55);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(401, 239);
+            this.richTextBox1.TabIndex = 4;
+            this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // formGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(641, 399);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.pb1);
             this.Controls.Add(this.lab1);
             this.Controls.Add(this.btn1);
@@ -87,6 +99,7 @@
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Label lab1;
         private System.Windows.Forms.PictureBox pb1;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
 
