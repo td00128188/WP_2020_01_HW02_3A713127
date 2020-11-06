@@ -30,24 +30,17 @@
         {
             this.btn1 = new System.Windows.Forms.Button();
             this.lab1 = new System.Windows.Forms.Label();
-            this.pb1 = new System.Windows.Forms.PictureBox();
-            this.pb2 = new System.Windows.Forms.PictureBox();
-            this.pb3 = new System.Windows.Forms.PictureBox();
-            this.pb4 = new System.Windows.Forms.PictureBox();
-            this.pb5 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pb1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb5)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn1
             // 
             this.btn1.Font = new System.Drawing.Font("新細明體", 16F);
-            this.btn1.Location = new System.Drawing.Point(334, 382);
+            this.btn1.Location = new System.Drawing.Point(250, 306);
+            this.btn1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(150, 60);
+            this.btn1.Size = new System.Drawing.Size(112, 48);
             this.btn1.TabIndex = 0;
             this.btn1.Text = "抽牌";
             this.btn1.UseVisualStyleBackColor = true;
@@ -56,78 +49,36 @@
             // lab1
             // 
             this.lab1.Font = new System.Drawing.Font("新細明體", 20F);
-            this.lab1.Location = new System.Drawing.Point(16, 19);
+            this.lab1.Location = new System.Drawing.Point(12, 15);
+            this.lab1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lab1.Name = "lab1";
-            this.lab1.Size = new System.Drawing.Size(139, 46);
+            this.lab1.Size = new System.Drawing.Size(120, 37);
             this.lab1.TabIndex = 2;
-            this.lab1.Text = "手牌";
+            this.lab1.Text = "抽牌順序";
             this.lab1.Click += new System.EventHandler(this.lab1_Click);
             // 
-            // pb1
+            // pictureBox1
             // 
-            this.pb1.Location = new System.Drawing.Point(22, 153);
-            this.pb1.Name = "pb1";
-            this.pb1.Size = new System.Drawing.Size(150, 210);
-            this.pb1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb1.TabIndex = 3;
-            this.pb1.TabStop = false;
-            // 
-            // pb2
-            // 
-            this.pb2.Location = new System.Drawing.Point(178, 153);
-            this.pb2.Name = "pb2";
-            this.pb2.Size = new System.Drawing.Size(150, 210);
-            this.pb2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb2.TabIndex = 4;
-            this.pb2.TabStop = false;
-            // 
-            // pb3
-            // 
-            this.pb3.Location = new System.Drawing.Point(334, 153);
-            this.pb3.Name = "pb3";
-            this.pb3.Size = new System.Drawing.Size(150, 210);
-            this.pb3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb3.TabIndex = 5;
-            this.pb3.TabStop = false;
-            // 
-            // pb4
-            // 
-            this.pb4.Location = new System.Drawing.Point(490, 153);
-            this.pb4.Name = "pb4";
-            this.pb4.Size = new System.Drawing.Size(150, 210);
-            this.pb4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb4.TabIndex = 6;
-            this.pb4.TabStop = false;
-            // 
-            // pb5
-            // 
-            this.pb5.Location = new System.Drawing.Point(646, 153);
-            this.pb5.Name = "pb5";
-            this.pb5.Size = new System.Drawing.Size(150, 210);
-            this.pb5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb5.TabIndex = 7;
-            this.pb5.TabStop = false;
+            this.pictureBox1.Location = new System.Drawing.Point(513, 87);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(105, 150);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // formGame
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(855, 499);
-            this.Controls.Add(this.pb5);
-            this.Controls.Add(this.pb4);
-            this.Controls.Add(this.pb3);
-            this.Controls.Add(this.pb2);
-            this.Controls.Add(this.pb1);
+            this.ClientSize = new System.Drawing.Size(641, 399);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lab1);
             this.Controls.Add(this.btn1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "formGame";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.formGame_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pb1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -136,11 +87,7 @@
 
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Label lab1;
-        private System.Windows.Forms.PictureBox pb1;
-        private System.Windows.Forms.PictureBox pb2;
-        private System.Windows.Forms.PictureBox pb3;
-        private System.Windows.Forms.PictureBox pb4;
-        private System.Windows.Forms.PictureBox pb5;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

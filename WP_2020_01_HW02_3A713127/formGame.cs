@@ -27,44 +27,13 @@ namespace WP_2020_01_HW02_3A713127
 
         private void btn1_Click(object sender, EventArgs e)
         {
-
-            Random deck =new Random();
-            int index = deck.Next(0, 10);
-            pb1.Image = list[index];
-            pb2.Image = list[deck.Next(0, 10)];
-            pb3.Image = list[deck.Next(0, 10)];
-            pb4.Image = list[deck.Next(0, 10)];
-            pb5.Image = list[deck.Next(0, 10)];
-            while (pb1.Image == pb2.Image ||
-                   pb1.Image == pb3.Image ||
-                   pb1.Image == pb4.Image ||
-                   pb1.Image == pb5.Image ||
-                   pb2.Image == pb3.Image ||
-                   pb2.Image == pb4.Image ||
-                   pb2.Image == pb5.Image ||
-                   pb3.Image == pb4.Image ||
-                   pb3.Image == pb5.Image ||
-                   pb4.Image == pb5.Image)
-            {
-                pb2.Image = list[deck.Next(0, 10)];
-                pb3.Image = list[deck.Next(0, 10)];
-                pb4.Image = list[deck.Next(0, 10)];
-                pb5.Image = list[deck.Next(0, 10)];
-            }
+            Random deck = new Random;
+            int index = 
         }
 
         private void formGame_Load(object sender, EventArgs e)
         {
-            list.Add(Resources._1);
-            list.Add(Resources._2);
-            list.Add(Resources._3);
-            list.Add(Resources._4);
-            list.Add(Resources._5);
-            list.Add(Resources._6);
-            list.Add(Resources._7);
-            list.Add(Resources._8);
-            list.Add(Resources._9);
-            list.Add(Resources._10);
+            
         }
     }
 }
