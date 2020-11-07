@@ -14,7 +14,7 @@ namespace WP_2020_01_HW02_3A713127
     public partial class formGame : Form
     {
         List<Image> list = new List<Image>();
-        
+        string[] poker = new string[52];
         public formGame()
         {
             InitializeComponent();
@@ -22,10 +22,21 @@ namespace WP_2020_01_HW02_3A713127
 
         private void btn1_Click(object sender, EventArgs e)
         {
+            int x = 0;
+            string t = "";
             Random deck = new Random();
-            pb1.Image = list[deck.Next(0,52)];
+            for (int i = 0; i < 52; i++)
+            {
+                x = deck.Next(0, 52);
+                t = poker[i];
+                poker[i] = poker[x];
+                poker[x] = t;
+            }          
         }
+        private void bt2_Click(object sender, EventArgs e)
+        {
 
+        }
         private void formGame_Load(object sender, EventArgs e)
         {
             list.Add(Resources._1);
@@ -80,10 +91,7 @@ namespace WP_2020_01_HW02_3A713127
             list.Add(Resources._50);
             list.Add(Resources._51);
             list.Add(Resources._52);
-        }
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            list.Add(Resources._00);
         }
     }
 }
