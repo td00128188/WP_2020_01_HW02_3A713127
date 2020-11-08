@@ -15,6 +15,8 @@ namespace WP_2020_01_HW02_3A713127
     {
         List<Image> list = new List<Image>();
         string[] poker = new string[52];
+        int[] Poker = new int[52];
+        int aa = 0;
         public formGame()
         {
             InitializeComponent();
@@ -31,10 +33,27 @@ namespace WP_2020_01_HW02_3A713127
                 t = poker[i];
                 poker[i] = poker[x];
                 poker[x] = t;
+                Poker[i] = x;
             }          
         }
         private void bt2_Click(object sender, EventArgs e)
         {
+                pb1.Image = list[Poker[aa]];
+            if (aa + 1 < 52)
+            {
+                Poker[aa] = Poker[aa + 1];
+                aa = aa + 1;
+            }
+            if (aa == 52)
+            {
+                pb1.Image = list[54];
+                aa = 0;
+            }
+                
+            
+                
+                
+            
 
         }
         private void formGame_Load(object sender, EventArgs e)
@@ -92,6 +111,18 @@ namespace WP_2020_01_HW02_3A713127
             list.Add(Resources._51);
             list.Add(Resources._52);
             list.Add(Resources._00);
+            list.Add(Resources.NO);
+            int x = 0;
+            string t = "";
+            Random deck = new Random();
+            for (int i = 0; i < 52; i++)
+            {
+                x = deck.Next(0, 52);
+                t = poker[i];
+                poker[i] = poker[x];
+                poker[x] = t;
+                Poker[i] = x;
+            }
         }
     }
 }
