@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,6 +17,8 @@ namespace WP_2020_01_HW02_3A713127
         List<Image> list = new List<Image>();
         int[] Poker = new int[52];
         int aa = 0;
+        int overaa = 0;
+        string t = "";
         public formGame()
         {
             InitializeComponent();
@@ -25,6 +28,7 @@ namespace WP_2020_01_HW02_3A713127
         {
             rtb1.Text = null;
             aa = 0;
+            t = "";
             pb2.Image = list[52];
             pb1.Image = list[53];
             Random deck = new Random();
@@ -49,42 +53,67 @@ namespace WP_2020_01_HW02_3A713127
             pb1.Image = list[Poker[aa]];
             if (c == 0)
             {
-                rtb1.Text = a + ". 黑桃 " + b + "\r\n";
+                t = t + a + ". 黑桃 " + b + "\r\n";
+                rtb1.Text = t;
             }
             else if(c == 1)
             {
-                if(b==0)
-                    rtb1.Text = a + ". 黑桃 13\r\n";
+                if (b == 0)
+                {
+                    t = t + a + ". 黑桃 13\r\n";
+                    rtb1.Text = t;
+                }
+
                 else
-                    rtb1.Text = a + ". 愛心 " + b + "\r\n";
+                {
+                    t = t + a + ". 愛心 " + b + "\r\n";
+                    rtb1.Text = t;
+                }                    
             }
             else if(c == 2)
             {
                 if (b == 0)
-                    rtb1.Text = a + ". 愛心 13\r\n";
+                {
+                    t = t + a + ". 愛心 13\r\n";
+                    rtb1.Text = t;
+                }
                 else
-                    rtb1.Text = a + ". 方塊 " + b + "\r\n";
+                {
+                    t = t + a + ". 方塊 " + b + "\r\n";
+                    rtb1.Text = t;
+                }                   
             }
             else if(c == 3)
             {
                 if (b == 0)
-                    rtb1.Text = a + ". 方塊 13 \r\n";
+                {
+                    t = t + a + ". 方塊 13 \r\n";
+                    rtb1.Text = t;
+                }
                 else
-                    rtb1.Text = a + ". 梅花 " + b + "\r\n";
+                {
+                    t = t + a + ". 梅花 " + b + "\r\n";
+                    rtb1.Text = t;
+                }                   
             }
             else if (c == 4)
             {
-                rtb1.Text = a +". 梅花 13\r\n";
+                t = t + a +". 梅花 13\r\n";
+                rtb1.Text = t;
             }
-            if (aa < 51)
-            {   
+            if (aa + 1< 52)
+            {
                 Poker[aa] = Poker[aa + 1];
-                aa = aa + 1;                   
+                aa = aa + 1;
             }
             else
             {
+                rtb1.Text = t;
                 pb2.Image = list[53];
             }
+            if(overaa == 0)
+                rtb1.Text = "沒牌了 抽三小";
+
         }
         private void formGame_Load(object sender, EventArgs e)
         {

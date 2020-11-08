@@ -64,7 +64,7 @@
             // pb1
             // 
             this.pb1.Location = new System.Drawing.Point(540, 283);
-            this.pb1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb1.Margin = new System.Windows.Forms.Padding(4);
             this.pb1.Name = "pb1";
             this.pb1.Size = new System.Drawing.Size(140, 188);
             this.pb1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -75,7 +75,7 @@
             // 
             this.bt2.Font = new System.Drawing.Font("新細明體", 16F);
             this.bt2.Location = new System.Drawing.Point(699, 104);
-            this.bt2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bt2.Margin = new System.Windows.Forms.Padding(4);
             this.bt2.Name = "bt2";
             this.bt2.Size = new System.Drawing.Size(140, 80);
             this.bt2.TabIndex = 5;
@@ -86,7 +86,7 @@
             // pb2
             // 
             this.pb2.Location = new System.Drawing.Point(702, 283);
-            this.pb2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb2.Margin = new System.Windows.Forms.Padding(4);
             this.pb2.Name = "pb2";
             this.pb2.Size = new System.Drawing.Size(140, 188);
             this.pb2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -104,7 +104,7 @@
             // 
             // rtb1
             // 
-            this.rtb1.Font = new System.Drawing.Font("新細明體", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.rtb1.Font = new System.Drawing.Font("新細明體", 12F);
             this.rtb1.Location = new System.Drawing.Point(24, 77);
             this.rtb1.Name = "rtb1";
             this.rtb1.Size = new System.Drawing.Size(496, 394);
