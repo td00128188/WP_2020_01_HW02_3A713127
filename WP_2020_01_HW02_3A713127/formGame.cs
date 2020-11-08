@@ -24,6 +24,10 @@ namespace WP_2020_01_HW02_3A713127
 
         private void btn1_Click(object sender, EventArgs e)
         {
+            rtb1.Text = null;
+            aa = 0;
+            pb2.Image = list[52];
+            pb1.Image = list[53];
             int x = 0;
             string t = "";
             Random deck = new Random();
@@ -38,16 +42,17 @@ namespace WP_2020_01_HW02_3A713127
         }
         private void bt2_Click(object sender, EventArgs e)
         {
-                pb1.Image = list[Poker[aa]];
-            if (aa + 1 < 52)
-            {
+            int a = aa + 1;
+            pb1.Image = list[Poker[aa]];
+            rtb1.Text = a + ".\r\n";
+            if (aa < 51)
+            {   
                 Poker[aa] = Poker[aa + 1];
-                aa = aa + 1;
+                aa = aa + 1;                   
             }
-            if (aa == 52)
+            else
             {
-                pb1.Image = list[54];
-                aa = 0;
+                pb2.Image = list[53];
             }
         }
         private void formGame_Load(object sender, EventArgs e)
@@ -117,6 +122,13 @@ namespace WP_2020_01_HW02_3A713127
                 poker[x] = t;
                 Poker[i] = x;
             }
+            pb2.Image = list[52];
+            pb1.Image = list[53];
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
