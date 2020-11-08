@@ -43,8 +43,34 @@ namespace WP_2020_01_HW02_3A713127
         private void bt2_Click(object sender, EventArgs e)
         {
             int a = aa + 1;
+            int b = (Poker[aa] + 1) % 13;
+            int c = (Poker[aa] + 1) / 13;
             pb1.Image = list[Poker[aa]];
-            rtb1.Text = a + ".\r\n";
+            if (c == 0)
+            {
+                rtb1.Text = a + ". 黑桃 " + b + "\r\n";
+            }
+            else if(c == 1)
+            {
+                if(b==0)
+                    rtb1.Text = a + ". 黑桃 13\r\n";
+                else
+                    rtb1.Text = a + ". 愛心 " + b + "\r\n";
+            }
+            else if(c == 2)
+            {
+                if (b == 0)
+                    rtb1.Text = a + ". 愛心 13\r\n";
+                else
+                    rtb1.Text = a + ". 方塊 " + b + "\r\n";
+            }
+            else if(c == 3)
+            {
+                if (b == 0)
+                    rtb1.Text = a + ". 方塊 13 \r\n";
+                else
+                    rtb1.Text = a + ". 梅花 " + b + "\r\n";
+            }
             if (aa < 51)
             {   
                 Poker[aa] = Poker[aa + 1];
