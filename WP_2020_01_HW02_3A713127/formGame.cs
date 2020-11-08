@@ -49,12 +49,6 @@ namespace WP_2020_01_HW02_3A713127
                 pb1.Image = list[54];
                 aa = 0;
             }
-                
-            
-                
-                
-            
-
         }
         private void formGame_Load(object sender, EventArgs e)
         {

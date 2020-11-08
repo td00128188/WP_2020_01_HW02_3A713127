@@ -80,321 +80,58 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\res.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\3.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\4.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\5.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\6.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\7.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\8.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\9.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\10.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\11.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\12.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\13.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\14.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\15.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\16.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\17.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\18.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\19.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\20.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\21.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\22.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\23.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\24.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\25.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\26.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\27.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\28.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\30.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\31.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\32.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\33.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\34.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\35.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\36.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\37.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\38.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\39.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\40.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\41.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\42.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\43.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\44.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\45.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\46.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\47.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\48.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\49.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\50.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\51.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\52.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\53.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\54.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\310.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\410.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\55.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\61.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\71.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\81.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\91.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\101.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\111.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\121.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\131.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\141.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\151.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\161.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\171.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\181.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\191.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\201.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\211.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\221.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\231.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\241.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\251.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\261.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\271.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\281.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\291.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\301.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\311.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\321.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\331.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\341.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\351.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\361.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\371.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\381.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\391.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\401.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\411.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\421.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\431.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\441.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\451.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\461.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\471.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\481.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\491.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\501.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\511.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\521.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\531.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\541.jpg" />
-  </ItemGroup>
-  <ItemGroup>
+    <None Include="Resources\51.jpg" />
+    <None Include="Resources\50.jpg" />
+    <None Include="Resources\49.jpg" />
+    <None Include="Resources\48.jpg" />
+    <None Include="Resources\47.jpg" />
+    <None Include="Resources\46.jpg" />
+    <None Include="Resources\45.jpg" />
+    <None Include="Resources\44.jpg" />
+    <None Include="Resources\43.jpg" />
+    <None Include="Resources\42.jpg" />
+    <None Include="Resources\41.jpg" />
+    <None Include="Resources\40.jpg" />
+    <None Include="Resources\39.jpg" />
+    <None Include="Resources\38.jpg" />
+    <None Include="Resources\37.jpg" />
+    <None Include="Resources\36.jpg" />
+    <None Include="Resources\35.jpg" />
+    <None Include="Resources\34.jpg" />
+    <None Include="Resources\33.jpg" />
+    <None Include="Resources\32.jpg" />
+    <None Include="Resources\31.jpg" />
+    <None Include="Resources\30.jpg" />
+    <None Include="Resources\29.jpg" />
+    <None Include="Resources\28.jpg" />
+    <None Include="Resources\27.jpg" />
+    <None Include="Resources\26.jpg" />
+    <None Include="Resources\25.jpg" />
+    <None Include="Resources\24.jpg" />
+    <None Include="Resources\23.jpg" />
+    <None Include="Resources\22.jpg" />
+    <None Include="Resources\21.jpg" />
+    <None Include="Resources\20.jpg" />
+    <None Include="Resources\19.jpg" />
+    <None Include="Resources\18.jpg" />
+    <None Include="Resources\17.jpg" />
+    <None Include="Resources\16.jpg" />
+    <None Include="Resources\15.jpg" />
+    <None Include="Resources\14.jpg" />
+    <None Include="Resources\13.jpg" />
+    <None Include="Resources\12.jpg" />
+    <None Include="Resources\11.jpg" />
+    <None Include="Resources\10.jpg" />
+    <None Include="Resources\9.jpg" />
+    <None Include="Resources\8.jpg" />
+    <None Include="Resources\7.jpg" />
+    <None Include="Resources\6.jpg" />
+    <None Include="Resources\5.jpg" />
+    <None Include="Resources\4.jpg" />
+    <None Include="Resources\3.jpg" />
+    <None Include="Resources\2.jpg" />
+    <None Include="Resources\1.jpg" />
     <None Include="Resources\00.jpg" />
   </ItemGroup>
   <ItemGroup>
