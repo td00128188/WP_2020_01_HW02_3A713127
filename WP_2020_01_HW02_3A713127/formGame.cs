@@ -14,7 +14,6 @@ namespace WP_2020_01_HW02_3A713127
     public partial class formGame : Form
     {
         List<Image> list = new List<Image>();
-        string[] poker = new string[52];
         int[] Poker = new int[52];
         int aa = 0;
         public formGame()
@@ -28,16 +27,18 @@ namespace WP_2020_01_HW02_3A713127
             aa = 0;
             pb2.Image = list[52];
             pb1.Image = list[53];
-            int x = 0;
-            string t = "";
             Random deck = new Random();
             for (int i = 0; i < 52; i++)
-            {
-                x = deck.Next(0, 52);
-                t = poker[i];
-                poker[i] = poker[x];
-                poker[x] = t;
-                Poker[i] = x;
+            { 
+                Poker[i] = deck.Next(0, 52);
+                for (int j= 0; j < i; j++)
+                {
+                    while(Poker[j] == Poker[i])
+                    {
+                        j = 0;
+                        Poker[i] = deck.Next(0, 52);
+                    }
+                }
             }          
         }
         private void bt2_Click(object sender, EventArgs e)
@@ -70,6 +71,10 @@ namespace WP_2020_01_HW02_3A713127
                     rtb1.Text = a + ". 方塊 13 \r\n";
                 else
                     rtb1.Text = a + ". 梅花 " + b + "\r\n";
+            }
+            else if (c == 4)
+            {
+                rtb1.Text = a +". 梅花 13\r\n";
             }
             if (aa < 51)
             {   
@@ -137,16 +142,19 @@ namespace WP_2020_01_HW02_3A713127
             list.Add(Resources._52);
             list.Add(Resources._00);
             list.Add(Resources.NO);
-            int x = 0;
-            string t = "";
+
             Random deck = new Random();
             for (int i = 0; i < 52; i++)
             {
-                x = deck.Next(0, 52);
-                t = poker[i];
-                poker[i] = poker[x];
-                poker[x] = t;
-                Poker[i] = x;
+                Poker[i] = deck.Next(0, 52);
+                for (int j = 0; j < i; j++)
+                {
+                    while (Poker[j] == Poker[i])
+                    {
+                        j = 0;
+                        Poker[i] = deck.Next(0, 52);
+                    }
+                }
             }
             pb2.Image = list[52];
             pb1.Image = list[53];
