@@ -19,6 +19,7 @@ namespace WP_2020_01_HW02_3A713127
         int aa = 0;
         int overaa = 0;
         string t = "";
+        string x = "沒牌是要抽三小\r\n";
         public formGame()
         {
             InitializeComponent();
@@ -52,74 +53,76 @@ namespace WP_2020_01_HW02_3A713127
             int b = (Poker[aa] + 1) % 13;
             int c = (Poker[aa] + 1) / 13;
             pb1.Image = list[Poker[aa]];
-            if (c == 0)
+            if(overaa == 0)
             {
-                t = t + a + ". 黑桃 " + b + "\r\n";
-                rtb1.Text = t;
-            }
-            else if(c == 1)
-            {
-                if (b == 0)
+                if (c == 0)
                 {
-                    t = t + a + ". 黑桃 13\r\n";
+                    t = t + a + ". 黑桃 " + b + "\r\n";
                     rtb1.Text = t;
                 }
+                else if (c == 1)
+                {
+                    if (b == 0)
+                    {
+                        t = t + a + ". 黑桃 13\r\n";
+                        rtb1.Text = t;
+                    }
 
-                else
+                    else
+                    {
+                        t = t + a + ". 愛心 " + b + "\r\n";
+                        rtb1.Text = t;
+                    }
+                }
+                else if (c == 2)
                 {
-                    t = t + a + ". 愛心 " + b + "\r\n";
-                    rtb1.Text = t;
-                }                    
-            }
-            else if(c == 2)
-            {
-                if (b == 0)
+                    if (b == 0)
+                    {
+                        t = t + a + ". 愛心 13\r\n";
+                        rtb1.Text = t;
+                    }
+                    else
+                    {
+                        t = t + a + ". 方塊 " + b + "\r\n";
+                        rtb1.Text = t;
+                    }
+                }
+                else if (c == 3)
                 {
-                    t = t + a + ". 愛心 13\r\n";
+                    if (b == 0)
+                    {
+                        t = t + a + ". 方塊 13 \r\n";
+                        rtb1.Text = t;
+                    }
+                    else
+                    {
+                        t = t + a + ". 梅花 " + b + "\r\n";
+                        rtb1.Text = t;
+                    }
+                }
+                else if (c == 4)
+                {
+                    t = t + a + ". 梅花 13\r\n";
                     rtb1.Text = t;
                 }
-                else
+                if (aa + 1 < 52)
                 {
-                    t = t + a + ". 方塊 " + b + "\r\n";
-                    rtb1.Text = t;
-                }                   
-            }
-            else if(c == 3)
-            {
-                if (b == 0)
-                {
-                    t = t + a + ". 方塊 13 \r\n";
-                    rtb1.Text = t;
+                    Poker[aa] = Poker[aa + 1];
+                    aa = aa + 1;
                 }
-                else
+                else if (aa + 1 == 52)
                 {
-                    t = t + a + ". 梅花 " + b + "\r\n";
                     rtb1.Text = t;
-                }                   
+                    pb2.Image = list[53];
+                    overaa = 1;
+                }                
             }
-            else if (c == 4)
+            else
             {
-                t = t + a +". 梅花 13\r\n";
+                t = x;
+                x = x+"沒牌是要抽三小\r\n";
                 rtb1.Text = t;
             }
-            if (aa + 1< 52)
-            {
-                Poker[aa] = Poker[aa + 1];
-                aa = aa + 1;
-            }
-            else if(aa == 52)
-            {
-                rtb1.Text = t;
-                pb2.Image = list[53];
-                overaa = 1;
-            }
-            else if(overaa == 1)
-            {
-                t = "沒牌了 抽三小";
-                rtb1.Text = t;
-            }
-            
-               
 
         }
         private void formGame_Load(object sender, EventArgs e)
@@ -198,7 +201,7 @@ namespace WP_2020_01_HW02_3A713127
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
