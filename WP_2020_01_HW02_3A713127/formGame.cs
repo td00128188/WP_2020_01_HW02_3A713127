@@ -28,6 +28,7 @@ namespace WP_2020_01_HW02_3A713127
         {
             rtb1.Text = null;
             aa = 0;
+            overaa = 0;
             t = "";
             pb2.Image = list[52];
             pb1.Image = list[53];
@@ -106,13 +107,19 @@ namespace WP_2020_01_HW02_3A713127
                 Poker[aa] = Poker[aa + 1];
                 aa = aa + 1;
             }
-            else
+            else if(aa == 52)
             {
                 rtb1.Text = t;
                 pb2.Image = list[53];
+                overaa = 1;
             }
-            if(overaa == 0)
-                rtb1.Text = "沒牌了 抽三小";
+            else if(overaa == 1)
+            {
+                t = "沒牌了 抽三小";
+                rtb1.Text = t;
+            }
+            
+               
 
         }
         private void formGame_Load(object sender, EventArgs e)
