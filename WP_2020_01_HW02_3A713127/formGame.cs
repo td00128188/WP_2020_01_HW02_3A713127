@@ -181,6 +181,7 @@ namespace WP_2020_01_HW02_3A713127
             list.Add(Resources._52);
             list.Add(Resources._00);
             list.Add(Resources.NO);
+            list.Add(Resources.設計稿);
 
             Random deck = new Random();
             for (int i = 0; i < 52; i++)
@@ -202,6 +203,16 @@ namespace WP_2020_01_HW02_3A713127
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            pb3.Image = list[54];
+        }
+
+        private void bt4_Click(object sender, EventArgs e)
+        {
+            pb3.Image = null;
         }
     }
 }
