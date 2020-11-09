@@ -30,6 +30,7 @@ namespace WP_2020_01_HW02_3A713127
             rtb1.Text = null;
             aa = 0;
             overaa = 0;
+            x = "沒牌是要抽三小\r\n";
             t = "";
             pb2.Image = list[52];
             pb1.Image = list[53];
