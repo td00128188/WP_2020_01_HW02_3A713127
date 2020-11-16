@@ -15,6 +15,7 @@ namespace WP_2020_01_HW02_3A713127
     public partial class formGame : Form
     {
         List<Image> list = new List<Image>();
+        Random deck = new Random();
         int[] Poker = new int[52];
         int aa = 0;
         int overaa = 0;
@@ -34,7 +35,6 @@ namespace WP_2020_01_HW02_3A713127
             t = "";
             pb2.Image = list[52];
             pb1.Image = list[53];
-            Random deck = new Random();
             for (int i = 0; i < 52; i++)
             { 
                 Poker[i] = deck.Next(0, 52);
@@ -184,7 +184,6 @@ namespace WP_2020_01_HW02_3A713127
             list.Add(Resources.NO);
             list.Add(Resources.設計稿);
 
-            Random deck = new Random();
             for (int i = 0; i < 52; i++)
             {
                 Poker[i] = deck.Next(0, 52);
